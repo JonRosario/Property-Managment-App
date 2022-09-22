@@ -7,9 +7,9 @@ const apartmentSchema = new mongoose.Schema({
   bedrooms: Number,
   bathrooms: Number,
   image: String,
-  building: {
+  property: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'Building',
+    ref: 'Property',
   }
 })
 

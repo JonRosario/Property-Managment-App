@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const buildingSchema = new mongoose.Schema({
+const propertySchema = new mongoose.Schema({
   propertyType: String,
   address: String,
   image: String,
@@ -16,6 +16,6 @@ const buildingSchema = new mongoose.Schema({
   // }
 })
 
-const Building = mongoose.model('Building', buildingSchema)
+const Property = mongoose.model('Property', propertySchema)
 
-module.exports = Building
+module.exports = Property

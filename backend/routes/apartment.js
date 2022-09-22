@@ -6,11 +6,9 @@ router.get("/", apartmentCtrl.index)
 
 router.post("/", apartmentCtrl.createApartment)
 
-router.post("/", apartmentCtrl.addAPTtoBuilding)
-
 router.get("/:id", apartmentCtrl.apartmentDetails)
 
-router.patch("/:id", apartmentCtrl.updateApartment)
+router.put("/:id", apartmentCtrl.updateApartment)
 
 router.delete("/:id/:_id", apartmentCtrl.deleteApartment)
 
